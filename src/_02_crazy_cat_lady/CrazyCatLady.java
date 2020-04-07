@@ -22,7 +22,9 @@ public class CrazyCatLady {
 			playVideo("https://www.youtube.com/watch?v=wZZ7oFKsKzY");
 		}
 		// 5. If they have 0 cats, show them a video of A Frog Sitting on a Bench Like a Human
-		
+		if (catNum == 0 ) {
+			playVideo("https://www.youtube.com/watch?v=UpSbhkPvRTg");
+		}
 	}
 
 	static void playVideo(String videoURL) {

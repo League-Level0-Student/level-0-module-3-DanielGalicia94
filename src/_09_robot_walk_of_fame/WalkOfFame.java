@@ -15,11 +15,15 @@ public class WalkOfFame {
 		rob.penDown();
 		rob.setSpeed(100);
 		// 2. Make the robot draw a star shape. Hint: 144.
-		for (int j= 0; j < 5; j++) {
+		for (int j= 0; j < 18; j++) {
 		for (int i= 0; i < 5; i++) {
 		rob.turn(144);
 		rob.move(30);
 		}
+		rob.penUp();
+		int xPos = rob.getX();
+		rob.setX(xPos + 50);
+		rob.penDown();
 		}
 
 		// 3. Set the size of the star to 30.
